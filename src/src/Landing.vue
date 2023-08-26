@@ -6,7 +6,7 @@ import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
 import Header from "./Header.vue";
 import ExampleCard from "./views/Presentation/Components/ExampleCard.vue";
-
+import kayakheader from "./kayakheader.vue";
 
 // images
 import vueMkHeader from "@/assets/Banniere.jpg";
@@ -25,6 +25,12 @@ onUnmounted(() => {
   body.classList.remove("presentation-page");
   body.classList.remove("bg-gray-200");
 });
+
+function scrollToAnchorPoint(refName) {
+            const el = this.$refs[refName]
+            el.scrollIntoView({ behavior: 'smooth'})
+        }
+
 </script>
 
 <template>
@@ -42,8 +48,9 @@ onUnmounted(() => {
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-7 d-flex justify-content-center flex-column">
-            <h1 class="text-white mb-4">Canalo</h1>
+          <div class="col-lg-7 col-md-9 col-sm-12 d-flex justify-content-center flex-column">
+            <!-- <h1 class="text-white mb-4">Canalo</h1>  -->
+            <h1 class="text-white mb-4">Charente maritime - Bretagne - Pays-Bas</h1>
             <p class="text-white opacity-8 lead pe-5 me-5">
               La Société CANALO est spécialisée dans le loisir nautique : enseignement de la pêche, pour tout public et
               sur différents types de supports.
@@ -69,8 +76,7 @@ onUnmounted(() => {
             <div class="row mt-4 display-flex">
               <div class="col-md-6 mt-md-0 mt-5 ">
                 
-                <ExampleCard class="shadow-lg" title="Kayak à pédales"
-                  :image="kayak"
+                <ExampleCard class="shadow-lg" title="Kayak à pédales" :image="kayak"
                   route="landing" subtitle="demi journée 4h avec un professionnel diplômé : 125€. Prêt du matériel inclus. Maximum 4 personnes."/>
 
               </div>
@@ -113,6 +119,7 @@ onUnmounted(() => {
       </div>
     </section>
 
+    <kayakheader id="kayak"></kayakheader>
 
   </div>
   <Footer />

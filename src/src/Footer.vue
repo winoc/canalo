@@ -47,7 +47,7 @@ defineProps({
         items: [
           {
             name: "kayak à pédales",
-            href: "landing"
+            href: "kayak"
           },
           {
             name: "bateau",

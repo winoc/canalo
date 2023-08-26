@@ -138,7 +138,7 @@ watch(
         <ul class="navbar-nav navbar-nav-hover ms-auto">
 
 
-            <RouterLink class="nav-link cursor-pointer" :to="{ name: 'landing' }">
+            <RouterLink class="nav-link cursor-pointer" :to="{ name: 'kayak' }">
               Kayak à pédales
             </RouterLink>
 
