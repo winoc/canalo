@@ -47,7 +47,7 @@ defineProps({
         items: [
           {
             name: "kayak à pédales",
-            href: "kayak"
+            href: "/#kayak"
           },
           {
             name: "bateau",
@@ -71,7 +71,7 @@ defineProps({
           },
           {
             name: "infos - CGV",
-            href: "landing"
+            href: "https://canalo.fr/CGVCANALO6.pdf"
           }
         ]
       }
@@ -116,7 +116,7 @@ defineProps({
           <h6 class="text-sm">{{ name }}</h6>
           <ul class="flex-column ms-n3 nav">
             <li class="nav-item" v-for="item of items" :key="item.name">
-              <RouterLink class="nav-link" :to="{ name: item.href }" target="_blank">
+              <RouterLink class="nav-link" :to="item.href">
                 {{ item.name }}
               </RouterLink>
             </li>

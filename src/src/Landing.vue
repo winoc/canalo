@@ -77,7 +77,7 @@ function scrollToAnchorPoint(refName) {
               <div class="col-md-6 mt-md-0 mt-5 ">
                 
                 <ExampleCard class="shadow-lg" title="Kayak à pédales" :image="kayak"
-                  route="landing" subtitle="demi journée 4h avec un professionnel diplômé : 125€. Prêt du matériel inclus. Maximum 4 personnes."/>
+                  route="/#kayak" subtitle="demi journée 4h avec un professionnel diplômé : 125€. Prêt du matériel inclus. Maximum 4 personnes."/>
 
               </div>
               <div class="col-md-6 mt-md-0 mt-5 ">

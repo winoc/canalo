@@ -1,4 +1,7 @@
 <script setup>
+
+import constant from "./constant"
+
 // example components
 import TransparentBlogCard from "./TransparentBlogCard.vue";
 import BackgroundBlogCard from "./BackgroundBlogCard.vue";
@@ -27,12 +30,14 @@ Si vous ne voulez pas être mélangé à d'autres personnes et que vous êtes :
 - seul 250€ 
 - deux 375€
 - trois 500€"
+          :route=constant.formularurl
           />
         </div>
         <div class="col-lg-6 col-sm-6">
           <TransparentBlogCard
             :image="kayaksoir"
             title="coup du soir"
+            :route=constant.formularurl
             description="3h avec un professionnel diplômé 95€ par personnes.
 
 Si vous ne voulez pas être mélangé à d'autres personnes et que vous êtes :

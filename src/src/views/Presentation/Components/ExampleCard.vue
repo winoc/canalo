@@ -41,7 +41,7 @@ export default {
 };
 </script>
 <template>
-  <RouterLink to="/#kayak">
+  <RouterLink :to=route>
     <div
       class="card move-on-hover"
       v-bind="$attrs"

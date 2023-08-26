@@ -2,6 +2,7 @@
 
 import vueMkHeader from "@/assets/landingkayak.jpg";
 import Posts from "./kayakPosts.vue";
+import constant from "./constant"
 
 </script>
 <template>
@@ -21,7 +22,7 @@ import Posts from "./kayakPosts.vue";
               et vous dirigerez en tournant la manette qui pilote le gouvernail. Dépaysement et détente garantis, comme
               pour cette sortie avec le Fort Boyard à l'horizon !
             </p>
-            <a href="https://"
+            <a :href=constant.formularurl
               class="text-white icon-move-right">
               Contact
               <i class="fas fa-arrow-right text-sm ms-1"></i>

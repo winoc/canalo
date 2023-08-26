@@ -3,9 +3,10 @@ import { RouterLink } from "vue-router";
 import { ref, watch } from "vue";
 import { useWindowsWidth } from "./assets/js/useWindowsWidth";
 
+import constant from "./constant"
+
 // images
 import ArrDark from "@/assets/img/down-arrow-dark.svg";
-import downArrow from "@/assets/img/down-arrow.svg";
 import DownArrWhite from "@/assets/img/down-arrow-white.svg";
 
 import canalogo from "@/assets/logo.png";
@@ -17,7 +18,7 @@ const props = defineProps({
     color: String,
     label: String,
     default: () => ({
-      route: "https://docs.google.com/forms/d/e/1FAIpQLScFN204YeZbe4JlyrbGlnT4TNA1l9xtjiCA0_efXdw0bNbJzg/viewform?usp=pp_url",
+      route: constant.formularurl,
       color: "bg-gradient-success",
       label: "Contact"
     })
@@ -124,7 +125,7 @@ watch(
         " to="/">
         Canalo
       </RouterLink>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScFN204YeZbe4JlyrbGlnT4TNA1l9xtjiCA0_efXdw0bNbJzg/viewform?usp=pp_url"
+      <a :href=constant.formularurl
         class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block">Contact</a>
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -138,7 +139,7 @@ watch(
         <ul class="navbar-nav navbar-nav-hover ms-auto">
 
 
-            <RouterLink class="nav-link cursor-pointer" :to="{ name: 'kayak' }">
+            <RouterLink class="nav-link cursor-pointer" :to="'/#kayak'">
               Kayak à pédales
             </RouterLink>
 

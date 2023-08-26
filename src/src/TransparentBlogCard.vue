@@ -12,6 +12,9 @@ defineProps({
     type: String,
     required: true,
   },
+  route: {
+    type: String,
+  },
   action: {
     type: Object,
     route: String,
@@ -39,7 +42,7 @@ defineProps({
     </div>
     <div class="card-body px-0">
       <h5>
-        <a :href="action.route" class="text-dark font-weight-bold">{{
+        <a :href="route" class="text-dark font-weight-bold">{{
           title
         }}</a>
       </h5>
@@ -47,7 +50,7 @@ defineProps({
         {{ description }}
       </p>
       <a
-        :href="action.route"
+        :href="route"
         class="text-sm icon-move-right"
         :class="`text-${action.color}`"
         >Contact
