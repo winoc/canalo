@@ -71,7 +71,7 @@ defineProps({
           },
           {
             name: "infos - CGV",
-            href: "https://canalo.fr/CGVCANALO6.pdf"
+            href: "/cgv"
           }
         ]
       }

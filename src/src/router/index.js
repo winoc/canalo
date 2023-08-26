@@ -14,7 +14,11 @@ const router = createRouter({
       path: "/kayak",
       name: "kayak",
       component: Kayak,
-    }
+    },
+    {
+      path: '/cgv',
+      beforeEnter() {location.href = 'https://www.canalo.fr/CGVCANALO6.pdf'}
+ }
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
