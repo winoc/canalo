@@ -6,7 +6,8 @@ import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
 import Header from "./Header.vue";
 import ExampleCard from "./views/Presentation/Components/ExampleCard.vue";
-import kayakheader from "./kayakheader.vue";
+import KayakLandingPart from "./KayakLandingPart.vue";
+import BateauLandingPart from "./BateauLandingPart.vue";
 
 // images
 import vueMkHeader from "@/assets/Banniere.jpg";
@@ -27,9 +28,9 @@ onUnmounted(() => {
 });
 
 function scrollToAnchorPoint(refName) {
-            const el = this.$refs[refName]
-            el.scrollIntoView({ behavior: 'smooth'})
-        }
+  const el = this.$refs[refName]
+  el.scrollIntoView({ behavior: 'smooth' })
+}
 
 </script>
 
@@ -50,8 +51,8 @@ function scrollToAnchorPoint(refName) {
         <div class="row">
           <div class="col-lg-7 col-md-9 col-sm-12 d-flex justify-content-center flex-column">
             <!-- <h1 class="text-white mb-4">Canalo</h1>  -->
-            <h1 class="text-white mb-4">Charente maritime - Bretagne - Pays-Bas</h1>
-            <p class="text-white opacity-8 lead pe-5 me-5">
+            <h1 class="text-white mb-3 mt-5">Charente maritime - Bretagne - Pays-Bas</h1>
+            <p class="text-white opacity-8 lead pe-5 me-3">
               La Société CANALO est spécialisée dans le loisir nautique : enseignement de la pêche, pour tout public et
               sur différents types de supports.
               Nos partenaires peuvent également vous permettre d'agrémenter vos séjours par des dégustations et des
@@ -75,30 +76,28 @@ function scrollToAnchorPoint(refName) {
           <div class="col-md-8">
             <div class="row mt-4 display-flex">
               <div class="col-md-6 mt-md-0 mt-5 ">
-                
-                <ExampleCard class="shadow-lg" title="Kayak à pédales" :image="kayak"
-                  route="/#kayak" subtitle="demi journée 4h avec un professionnel diplômé : 125€. Prêt du matériel inclus. Maximum 4 personnes."/>
+
+                <ExampleCard class="shadow-lg" title="Kayak à pédales" :image="kayak" route="/#kayak"
+                  subtitle="demi journée 4h avec un professionnel diplômé : 125€. Prêt du matériel inclus. Maximum 4 personnes." />
 
               </div>
               <div class="col-md-6 mt-md-0 mt-5 ">
 
-                <ExampleCard class="shadow-lg" title="Bateau"
-                  :image="bateau"
-                  route="landing" subtitle="demi journée 4h : 125€. Prêt du matériel inclus. Maximum 5 pêcheurs. Accompagnants possible."/>
+                <ExampleCard class="shadow-lg" title="Bateau" route="/#bateau" :image="bateau"
+                  subtitle="demi journée 4h : 125€. Prêt du matériel inclus. Maximum 5 pêcheurs. Accompagnants possible." />
 
               </div>
             </div>
             <div class="row mt-4">
               <div class="col-md-6 mt-md-0 mt-5">
 
-                <ExampleCard classes="mt-5" title="Bord" :image="bord" route="landing" subtitle="Venez découvrir la pêche en famille durant 2h ! Soit découverte des petits poissons 85€. Ou bien découverte de la pêche à l'anguille le soir sans hameçon, 85€." />
+                <ExampleCard classes="mt-5" title="Bord" :image="bord" route="landing"
+                  subtitle="Venez découvrir la pêche en famille durant 2h ! Soit découverte des petits poissons 85€. Ou bien découverte de la pêche à l'anguille le soir sans hameçon, 85€." />
 
               </div>
               <div class="col-md-6 mt-md-0 mt-5">
 
-                <ExampleCard classes="shadow-lg" title="Mini stages"
-                  :image="stage"
-                  route="landing"
+                <ExampleCard classes="shadow-lg" title="Mini stages" :image="stage" route="landing"
                   subtitle="Possibilité de mini stages sur l'année à destination des AAPPMA, EPHAD ou autres structures : découverte de la pêche au coup ou de l'anguille sans hameçon, pêche en float tube, découverte de la pêche en kayak, sorties en bateau... Certaines de ces activités peuvent être pratiquées par les personnes à mobilité réduite, ou porteuses d'un handicap." />
 
               </div>
@@ -107,11 +106,12 @@ function scrollToAnchorPoint(refName) {
           <div class="col-md-3 mx-auto mt-md-0 mt-3">
             <div class="position-sticky" style="top: 100px !important">
               <h3>
-                "J'ai passé un BPJEPS pêche de loisir, pour pouvoir allier mon métier d'enseignant à ma passion pour la pêche."
+                "J'ai passé un BPJEPS pêche de loisir, pour pouvoir allier mon métier d'enseignant à ma passion pour la
+                pêche."
               </h3>
               <h6 class="text-secondary font-weight-normal">
                 Guillaume sera votre guide.
-                Ancien professeur d'éducation physique et sportive, il aura à coeur de vous conseiller. 
+                Ancien professeur d'éducation physique et sportive, il aura à coeur de vous conseiller.
               </h6>
             </div>
           </div>
@@ -119,7 +119,9 @@ function scrollToAnchorPoint(refName) {
       </div>
     </section>
 
-    <kayakheader id="kayak"></kayakheader>
+    <KayakLandingPart id="kayak"></KayakLandingPart>
+
+    <BateauLandingPart id="bateau"></BateauLandingPart>
 
   </div>
   <Footer />

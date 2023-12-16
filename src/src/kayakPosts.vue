@@ -15,10 +15,10 @@ import post4 from "@/assets/img/examples/blog2.jpg";
 </script>
 
 <template>
-  <section class="py-3">
+  <section class="py-7">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-sm-6">
+        <div class="col-6">
           <TransparentBlogCard
             :image="kayaksortie"
             title="Sortie découverte"
@@ -33,10 +33,10 @@ Si vous ne voulez pas être mélangé à d'autres personnes et que vous êtes :
           :route=constant.formularurl
           />
         </div>
-        <div class="col-lg-6 col-sm-6">
+        <div class="col-6">
           <TransparentBlogCard
             :image="kayaksoir"
-            title="coup du soir"
+            title="Coup du soir"
             :route=constant.formularurl
             description="3h avec un professionnel diplômé 95€ par personnes.
 

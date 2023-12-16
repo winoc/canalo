@@ -143,7 +143,7 @@ watch(
               Kayak à pédales
             </RouterLink>
 
-            <RouterLink class="nav-link cursor-pointer ms-1" :to="{ name: 'landing' }">
+            <RouterLink class="nav-link cursor-pointer ms-1" :to="'/#bateau'">
               Bateau
             </RouterLink>
             <RouterLink class="nav-link cursor-pointer ms-1" :to="{ name: 'landing' }">

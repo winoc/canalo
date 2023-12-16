@@ -51,7 +51,7 @@ defineProps({
           },
           {
             name: "bateau",
-            href: "landing"
+            href: "/#bateau"
           },
           {
             name: "bord",
