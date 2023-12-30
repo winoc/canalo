@@ -109,10 +109,15 @@ function scrollToAnchorPoint(refName) {
                 "J'ai passé un BPJEPS pêche de loisir, pour pouvoir allier mon métier d'enseignant à ma passion pour la
                 pêche."
               </h3>
+              
               <h6 class="text-secondary font-weight-normal">
                 Guillaume sera votre guide.
                 Ancien professeur d'éducation physique et sportive, il aura à coeur de vous conseiller.
               </h6>
+
+
+              <iframe src="https://www.youtube.com/embed/XYoW1P-F7YY?si=KJmeD7f-7CHeLr0P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
             </div>
           </div>
         </div>
