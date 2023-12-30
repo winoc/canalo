@@ -60,7 +60,7 @@ export default {
     </div>
     <div class="mt-2 ms-2">
       <h6 class="mb-0">{{ title }}</h6>
-      <p class="text-secondary text-sm font-weight-normal">
+      <p class="text-secondary text-sm font-weight-normal" :style="`white-space: pre-wrap;`">
         {{ subtitle }}
       </p>
     </div>
