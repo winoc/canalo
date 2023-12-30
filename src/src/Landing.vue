@@ -13,7 +13,7 @@ import BateauLandingPart from "./BateauLandingPart.vue";
 import vueMkHeader from "@/assets/Banniere.jpg";
 import kayak from "@/assets/landingkayak.jpg";
 import bateau from "@/assets/landingbateau.jpg";
-import bord from "@/assets/anguille.png";
+import bord from "@/assets/bords.jpg";
 import stage from "@/assets/landingstage.jpg";
 
 //hooks
@@ -78,13 +78,17 @@ function scrollToAnchorPoint(refName) {
               <div class="col-md-6 mt-md-0 mt-5 ">
 
                 <ExampleCard class="shadow-lg" title="Kayak à pédales" :image="kayak" route="/#kayak"
-                  subtitle="demi journée 4h avec un professionnel diplômé : 125€. Prêt du matériel inclus. Maximum 4 personnes." />
+                  subtitle="demi journée (4h) ou journée (6h, eau douce uniquement) avec un professionnel diplômé : à partir de 125€. Prêt du matériel inclus. Maximum 4 personnes." />
 
               </div>
               <div class="col-md-6 mt-md-0 mt-5 ">
 
                 <ExampleCard class="shadow-lg" title="Bateau" route="/#bateau" :image="bateau"
-                  subtitle="demi journée 4h : 125€. Prêt du matériel inclus. Maximum 5 pêcheurs. Accompagnants possible." />
+                  subtitle="Bass boat alu 4m50
+Journée 6h eau douce ou bord de mer : à partir de 155€. Prêt du matériel inclus. Maximum 3 pêcheurs.
+                  
+Semi rigide 6m 150cv
+Journée en mer 6h : à partir de 155€. Prêt du matériel inclus. Maximum 5 pêcheurs. Accompagnants possible." />
 
               </div>
             </div>
@@ -92,13 +96,13 @@ function scrollToAnchorPoint(refName) {
               <div class="col-md-6 mt-md-0 mt-5">
 
                 <ExampleCard classes="mt-5" title="Bord" :image="bord" route="landing"
-                  subtitle="Venez découvrir la pêche en famille durant 2h ! Soit découverte des petits poissons 85€. Ou bien découverte de la pêche à l'anguille le soir sans hameçon, 85€." />
+                  subtitle="Venez découvrir la pêche en famille durant 2h ! Découverte des petits poissons et des écrevisses:  à partir de 85€ par famille." />
 
               </div>
               <div class="col-md-6 mt-md-0 mt-5">
 
                 <ExampleCard classes="shadow-lg" title="Mini stages" :image="stage" route="landing"
-                  subtitle="Possibilité de mini stages sur l'année à destination des AAPPMA, EPHAD ou autres structures : découverte de la pêche au coup ou de l'anguille sans hameçon, pêche en float tube, découverte de la pêche en kayak, sorties en bateau... Certaines de ces activités peuvent être pratiquées par les personnes à mobilité réduite, ou porteuses d'un handicap." />
+                  subtitle="Possibilité de mini stages sur l'année à destination des AAPPMA, EPHAD ou autres structures : découverte de la pêche au coup, pêche en float tube, découverte de la pêche en kayak, sorties en bateau... Certaines de ces activités peuvent être pratiquées par les personnes à mobilité réduite, ou porteuses d'un handicap. Nous consulter." />
 
               </div>
             </div>
